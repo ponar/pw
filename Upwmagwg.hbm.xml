@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Upwmagwg" table="upwmagwg">
+        <!--
+        <id name="upwmagwg_nrpw">
+            <generator class="native" />
+        </id>
+        -->
+         <id name="upwmagwg_nrpw" type="java.lang.String">
+            <column name="upwmagwg_nrpw" />
+            <generator class="assigned" />
+        </id>
+        <property name="upwmagwg_zlecenie"  />
+        <property name="upwmagwg_user"  />
+        <property name="upwmagwg_data"  />
+    </class>
+</hibernate-mapping>
