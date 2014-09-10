@@ -16,6 +16,7 @@ public class JavaApplication3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //jakis tam komentarz
         Okno okno = new Okno();
         okno.setVisible(true);
     }
