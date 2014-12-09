@@ -15,6 +15,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Pattern;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.*;
@@ -294,11 +295,19 @@ public class Okno extends javax.swing.JFrame {
         public void updateLog(DocumentEvent e, String action) {
             Document doc = (Document) e.getDocument();
             int changeLength = e.getLength();
-            String zle = "Z";
-            if (jTextField1.getText().equals(zle)) {
+            //String zle = "Z";
+            //String pk = "P";
+            //
+            if(Pattern.compile("[A-Z]").matcher(jTextField1.getText()).find()){
+                System.out.println("PASUJE");
+                jTextField2.setText("PW" + zapytanie());
+            }
+            /*
+            if (jTextField1.getText().equals(zle) || jTextField1.getText().equals(pk)) {
                 System.out.println("zlecenie wpisane");
                 jTextField2.setText("PW" + zapytanie());
             }
+            */
 
         }
     }
