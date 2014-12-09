@@ -276,7 +276,7 @@ public class Okno extends javax.swing.JFrame {
         // czysci pole tekstowe jtextField1
         jTextField1.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
-    //test
+    //test 
 
     class MyDocumentListener implements DocumentListener {
 
